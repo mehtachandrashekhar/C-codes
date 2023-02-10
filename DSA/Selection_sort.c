@@ -19,6 +19,7 @@ int main()
     for(i=0;i<n;i++)
     {
         min = i;
+        // finding of minimum element
         for(j=i+1;j<n;j++)
         {
             if(arr[min]>arr[j])
@@ -28,11 +29,13 @@ int main()
         }
         if(min!=i)
             {
+                // swapping
                 temp = arr[i];
                 arr[i] = arr[min];
                 arr[min] = temp; 
             }
     }
+    
     printf("Sorted list in ascending order :\n");
     for(i=0;i<n;i++)
     {
