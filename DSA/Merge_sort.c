@@ -44,7 +44,7 @@ void mergeSort(int list[],int low,int mid,int high)
 {
     int i, mi, k, lo, temp[50];
     lo = low;
-    i = low;
+    i = low;// temp array variable
     mi = mid + 1;
     while ((lo <= mid) && (mi <= high))
     {
@@ -60,7 +60,7 @@ void mergeSort(int list[],int low,int mid,int high)
         }
         i++;
     }
-    if (lo > mid)
+    if (lo > mid) 
     {
         for (k = mi; k <= high; k++)
         {

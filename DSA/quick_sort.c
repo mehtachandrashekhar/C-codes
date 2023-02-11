@@ -5,10 +5,9 @@ int main()
 {
     int list[50];
     int size, i;
-
     printf("Enter the number of elements: ");
     scanf("%d", &size);
-    
+
     printf("Enter the elements to be sorted:\n");
     for (i = 0; i < size; i++)
     {
